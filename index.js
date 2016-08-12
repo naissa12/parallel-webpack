@@ -61,6 +61,7 @@ function run(configPath, options, callback) {
     try {
         process.argv = options.argv;
         config = loadConfigurationFile(configPath);
+        console.log(config);
         process.argv = argvBackup;
     } catch(e) {
         process.argv = argvBackup;
